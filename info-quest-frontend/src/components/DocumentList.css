@@ -1,0 +1,114 @@
+/*body {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    font-family: 'Arial', sans-serif;*/
+/*    background: #f4f4f4;*/
+/*    color: #333;*/
+/*}*/
+/* Table styles */
+/* Ajustează lățimea și padding-ul pentru containerul tabelului */
+.ant-table-wrapper {
+    width: 90%;
+    padding-left: 0;
+}
+.small-summary {
+    font-size:0.8rem ; /* Ajustează dimensiunea fontului pentru textul din coloana "Summary" */
+}
+
+/* Dacă folosești Row și Col, asigură-te că nu există margini interne */
+.ant-row {
+    margin-left: 0 !important; /* Forțează eliminarea marginilor implicit */
+    margin-right: 0 !important;
+}
+
+.ant-col {
+    padding-left: 0 !important; /* Forțează eliminarea padding-ului implicit */
+    padding-right: 0 !important;
+}
+
+
+.ant-table-pagination.ant-pagination {
+    float: right;
+    margin: 16px 0;
+}
+
+/* Button styles */
+.ant-btn-primary {
+    background: #fff;
+    border-color: #40a9ff;
+    color: #40a9ff;
+    font-weight: 500;
+}
+
+.ant-btn-primary:hover {
+    background: #40a9ff;
+    border-color: #40a9ff;
+}
+
+#deleteButton {
+    background: #fff;
+    border-color: #ff4d4f;
+    color: #ff4d4f;
+    font-weight: 500;
+}
+
+#deleteButton:hover{
+    background: #ff4d4f;
+    border-color: #ff4d4f;
+    color: #fff;
+}
+
+/* Modal styles */
+.ant-modal-header {
+    background: #fafafa;
+    padding: 16px 24px;
+}
+
+.ant-modal-title {
+    color: #333;
+    font-weight: 500;
+}
+
+.ant-modal-body {
+    padding: 16px 24px;
+}
+
+.ant-modal-footer {
+    padding: 10px 16px;
+    background: #f4f4f4;
+    border-top: 1px solid #e8e8e8;
+}
+
+/* Form styles */
+.ant-form-item {
+    margin-bottom: 16px;
+}
+
+/* Checkbox group styles */
+.ant-checkbox-group {
+    width: 100%;
+}
+
+.ant-checkbox-group-item {
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Additional custom styles */
+.div-content-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    .ant-table-wrapper {
+        box-shadow: none;
+    }
+
+    .ant-modal-footer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

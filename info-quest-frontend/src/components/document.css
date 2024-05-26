@@ -1,0 +1,48 @@
+.tableWrapper {
+  padding: 24px; /* Spațiu în jurul tabelului pentru o separare clară */
+  margin: 20px auto; /* Centrarea tabelului pe pagină cu spațiu sus și jos */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12); /* O umbră subtilă pentru efect de elevație */
+  border-radius: 8px; /* Colțuri rotunjite pentru un aspect modern */
+  background: #ffffff; /* Fundal alb pentru a contrasta cu majoritatea temelor */
+  max-width: 960px; /* O lățime maximă pentru a limita extinderea tabelului */
+}
+
+.ant-table-container {
+  overflow-x: auto; /* Permite scroll orizontal dacă tabelul este prea lat */
+}
+
+.ant-table-thead > tr > th {
+  background-color: #40a9ff; /* Culoarea de fundal pentru header */
+  color: white;
+  font-weight: 600; /* Font puțin mai gros pentru a evidenția header-ul */
+}
+
+.ant-table-tbody > tr > td {
+  padding: 10px; /* Padding standard în celule pentru spațiu suficient */
+}
+
+.ant-table-row:hover {
+  background-color: #e6f7ff; /* O culoare de fundal la hover pentru a evidenția rândul */
+}
+
+.customButton,
+.deleteButton {
+  margin-right: 8px; /* Spațiu între butoane */
+}
+
+.addButton {
+  color: #40a9ff; /* Ajustează culoarea pentru butonul de adăugare */
+  border-color: #40a9ff;
+}
+
+.deleteButton {
+  color: #ff4d4f; /* Culoare pentru butonul de ștergere */
+  border-color: #ff4d4f;
+}
+
+/* Asigură-te că tabelul și conținutul său se adaptează bine la container */
+.ant-table {
+  width: auto; /* Permite tabelului să se ajusteze la lățimea container-ului */
+}
+
+

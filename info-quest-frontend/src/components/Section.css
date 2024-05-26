@@ -1,0 +1,43 @@
+#resetButton {
+    background: #fff;
+    border-color: #cccccc;
+    color: #333333;
+    font-weight: 500;
+}
+
+#resetButton:hover{
+    background: #8FBC8F;
+    border-color: #8FBC8F;
+    color: #fff;
+}
+
+#submitButton {
+    background: #fff;
+    border-color: #cccccc;
+    color: #333333;
+    font-weight: 500;
+}
+
+#submitButton:hover{
+    background: #40a9ff;
+    border-color: #40a9ff;
+    color: #fff;
+}
+.div-content-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#deleteButton {
+    background: #fff;
+    border-color: #ff4d4f;
+    color: #ff4d4f;
+    font-weight: 500;
+}
+
+#deleteButton:hover{
+    background: #ff4d4f;
+    border-color: #ff4d4f;
+    color: #fff;
+}

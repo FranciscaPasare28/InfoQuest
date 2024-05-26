@@ -1,0 +1,155 @@
+/*!* Style for the main navigation bar container *!*/
+/*.navbar {*/
+/*    display: flex;*/
+/*    justify-content: start;*/
+/*    align-items: center;*/
+/*    font-family: 'Arial', sans-serif;*/
+/*    position: relative; !* Required for absolute positioning of children *!*/
+/*}*/
+
+/*!* Style for the navigation links container *!*/
+/*.navbar-container {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    width: 100%; !* Take full width to push logout to the right *!*/
+/*}*/
+
+/*!* Style for the individual navigation links *!*/
+/*.navbar a {*/
+/*    display: block;*/
+/*    color: #333333;*/
+/*    padding: 14px 16px;*/
+/*    text-decoration: none;*/
+/*    font-size: 14px;*/
+/*}*/
+
+/*!* Hover effect for the links *!*/
+/*.navbar a:hover {*/
+/*    background-color: #ddd;*/
+/*}*/
+
+/*!* Style for the active (current) link *!*/
+/*.navbar a.active {*/
+/*    background-color: #04AA6D;*/
+/*    color: white;*/
+/*}*/
+
+/*!* List style removal and display setting for list items *!*/
+/*.navbar li {*/
+/*    list-style: none;*/
+/*}*/
+
+/*!* Style for the logout button *!*/
+/*.logout {*/
+/*    position: absolute;*/
+/*    right: 0;*/
+/*    cursor: pointer;*/
+/*    padding: 14px 16px; !* Padding to match other links *!*/
+/*}*/
+
+/*!* Style change for links on hover *!*/
+/*.navbarLink {*/
+/*    transition: color 0.3s ease;*/
+/*}*/
+
+/*!* Responsive style changes *!*/
+/*@media screen and (max-width: 600px) {*/
+/*    .navbar-container {*/
+/*        flex-direction: column;*/
+/*    }*/
+
+/*    .navbar a {*/
+/*        text-align: center;*/
+/*        padding: 10px; !* Adjusted padding for smaller screens *!*/
+/*    }*/
+
+/*    .logout {*/
+/*        position: static; !* Reset position to stack within the flex container *!*/
+/*        width: 100%; !* Full width for a better mobile layout *!*/
+/*    }*/
+/*}*/
+/*!* Stil pentru butonul de meniu *!*/
+/*.menu-button {*/
+/*    display: none; !* Ascuns pe desktop *!*/
+/*    padding: 14px 16px;*/
+/*    cursor: pointer;*/
+/*    background-color: #04AA6D;*/
+/*    color: white;*/
+/*}*/
+
+/*.navbar-container {*/
+/*    display: flex;*/
+/*    flex-direction: column; !* Schimbă direcția pentru mobil *!*/
+/*    align-items: center;*/
+/*    width: 100%; !* Ajustare lățime *!*/
+/*    transform: translateY(-100%); !* Ascunde meniul inițial *!*/
+/*    transition: transform 0.3s ease; !* Animatie pentru transform *!*/
+/*}*/
+
+/*.navbar-container.open {*/
+/*    transform: translateY(0); !* Arată meniul când este deschis *!*/
+/*}*/
+
+/*@media screen and (min-width: 600px) {*/
+/*    .menu-button {*/
+/*        display: none; !* Ascunde butonul de meniu pe desktop *!*/
+/*    }*/
+
+/*    .navbar-container {*/
+/*        display: flex;*/
+/*        flex-direction: row; !* Layout orizontal pe desktop *!*/
+/*        transform: translateY(0); !* Meniul este mereu vizibil pe desktop *!*/
+/*    }*/
+/*}*/
+.navbar {
+    height: 30px;
+    width: 100%;
+    /* overflow: hidden; Removed to prevent clipping of dropdown */
+
+
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative; /* Needed to position the dropdown menu absolutely */
+}
+
+.menu-button, .logout-button {
+    cursor: pointer;
+    padding: 10px;
+
+}
+
+.menu-button:hover, .logout-button:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown {
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px;
+    display: block; /* Initially hidden, shown when `isMenuOpen` is true */
+    left: 0; /* Align to the left side of the navbar-container */
+    top: 100%; /* Position it right below the menu button */
+    z-index: 1;
+}
+
+.navbarLink {
+    display: block;
+    margin: 10px 0;
+    color: black;
+    text-decoration: none;
+}
+
+.navbarLink:hover {
+    background-color: #ddd;
+}
+
+.logout-button {
+    cursor: pointer;
+    padding: 10px;
+    /* Additional styling for logout button if needed */
+}

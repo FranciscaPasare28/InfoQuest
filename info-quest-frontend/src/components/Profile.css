@@ -1,0 +1,20 @@
+.profile-container {
+    font-family: Arial, sans-serif;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.profile-container p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.fa-user-circle {
+    color: #007bff; /* Bootstrap primary blue, for example */
+    margin-bottom: 20px;
+}

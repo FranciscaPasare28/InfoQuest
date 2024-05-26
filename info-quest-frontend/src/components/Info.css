@@ -1,0 +1,163 @@
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #F0F2F5;
+    /*background-color: #8FBC8F;*/
+}
+
+.chat-wrapper {
+    width: 100%;
+    max-width: 600px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #F0F2F5;
+}
+.messages {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message-sent {
+    align-self: flex-end;
+    max-width: 60%;
+    background-color: #cccccc;
+    padding: 10px;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+}
+
+.message-received {
+    align-self: flex-start;
+    max-width: 60%;
+    background-color: #40a9ff;
+    color: #dddddd;
+    padding: 10px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+}
+
+.text {
+    margin: 0;
+    word-wrap: break-word;
+}
+
+
+.chat-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.input-style {
+    flex-grow: 1;
+}
+
+.send, .refresh, .request-history {
+    background-color: #1890ff;
+    color: #fff;
+    border: none;
+}
+
+.send:hover, .refresh:hover, .request-history:hover {
+    background-color: #40a9ff;
+}
+
+.ant-btn {
+    height: 40px;
+}
+
+.ant-input {
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 15px;
+}
+
+.notes-panel {
+    position: fixed;
+    right: 20px;
+    top: 92px;
+    width: 250px;
+    height: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow-y: auto;
+    z-index: 1000; /* Asigură-te că se afișează peste alte elemente */
+    padding: 10px;
+}
+
+
+.sticky-note {
+    cursor: grab;
+    resize: both;
+    overflow: hidden;
+    position: absolute; /* Important pentru a permite mutarea liberă */
+    padding: 8px;
+    border: 1px solid black;
+    background-color: yellow; /* Culoarea standard pentru sticky notes */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.sticky-note textarea {
+    width: 100%;
+    height: 80%;
+    border: none;
+    background: transparent;
+    resize: none; /* Împiedică redimensionarea internă a textarea */
+    outline: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.sticky-note button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: none;
+    background: rgba(255, 0, 0, 0.6); /* Roșu cu transparență */
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sticky-note button:hover {
+    background: red; /* Intensifică culoarea când cursorul este peste buton */
+}
+
+.toggle-notes-button {
+    position: absolute; /* Poziționează elementul absolut relativ la cel mai apropiat părinte poziționat non-static */
+    top: 50px; /* 10px de marginea superioară a containerului părinte */
+    right: 10px; /* 10px de marginea dreaptă a containerului părinte */
+    z-index: 100; /* Asigură-te că butonul este deasupra altor elemente */
+}
+
+
+.sticky-notes-wrapper {
+    width: 30%; /* Adjust based on your layout needs */
+    padding: 10px;
+    box-shadow: -1px 0px 5px rgba(0, 0, 0, 0.1); /* Optional */
+}

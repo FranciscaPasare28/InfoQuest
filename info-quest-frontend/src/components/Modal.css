@@ -1,0 +1,17 @@
+#myModal {
+    /* Stilizare pentru containerul modal */
+    position: fixed; /* Asigurați-vă că modalul rămâne fixat în partea vizibilă a ecranului */
+    top: 0; /* Poziționați modalul în partea de sus a ferestrei vizibile */
+    left: 0; /* Poziționați modalul în partea stângă a ferestrei vizibile */
+    width: 100%; /* Asigurați-vă că modalul ocupă întreaga lățime a ecranului */
+    height: 100%; /* Asigurați-vă că modalul ocupă întreaga înălțime a ecranului */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundal semi-transparent pentru a crea efectul de suprapunere */
+    z-index: 9999; /* Asigurați-vă că modalul este afișat peste toate celelalte elemente */
+    display: flex; /* Utilizați flexbox pentru a centra conținutul modalului pe verticală și orizontală */
+    justify-content: center; /* Centrați conținutul modalului pe orizontală */
+    align-items: center; /* Centrați conținutul modalului pe verticală */
+}
+
+.modal-container {
+    /* Alte stiluri pentru containerul modal, cum ar fi margini, padding, etc. */
+}
